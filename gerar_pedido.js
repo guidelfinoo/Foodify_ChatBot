@@ -156,5 +156,5 @@ const combos = [
 
 gerarBtn.addEventListener("click", () => {
   const combo = combos[Math.floor(Math.random() * combos.length)];
-  pedidoDiv.textContent = `Seu combo: ${combo.hamb} + ${combo.bebida} + ${combo.adicional}`;
+  pedidoDiv.textContent = `Seu combo: ${combo.hamb} + ${combo.bebida} + ${combo.adicional}  + ${combo.sobremesa}`;
 });
