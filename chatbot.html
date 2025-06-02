@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IA Lanchonete - Foodify</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>🤖 Atendente Virtual do Foodify</h1>
+        </header>
+
+        <section class="chat-interface">
+            <div class="chat" id="chat" aria-live="polite" aria-label="Chat com o atendente virtual">
+                <div class="bot">Olá! Sou o Foodify, seu atendente virtual. O que deseja hoje?</div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Digite seu pedido..."
+                    aria-label="Campo para digitar pedido" />
+                <button id="sendBtn">Enviar</button>
+                <button id="voiceBtn" title="Fale sua mensagem">🎤</button>
+            </div>
+        </section>
+
+        <aside class="robot-image" aria-hidden="true">
+            <img src="robo_foodify.png" alt="Imagem do robô Foodify" />
+        </aside>
+
+        <nav>
+            <button onclick="location.href='index.html'" class="btn-voltar" aria-label="Voltar para a página inicial">⬅️
+                Voltar</button>
+        </nav>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

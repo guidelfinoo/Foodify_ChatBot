@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerar Pedido Automático - Foodify</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Gerador de Pedido Automático</h1>
+        </header>
+
+        <section class="gerador-pedido">
+            <button id="gerarBtn" aria-label="Gerar Combo">Gerar Combo</button>
+            <div id="pedido" aria-live="polite">Clique no botão para gerar um combo delicioso!</div>
+        </section>
+        <footer>
+            <button onclick="location.href='index.html'" class="btn-voltar" aria-label="Voltar para página inicial">⬅️ Voltar</button>
+        </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="gerar_pedido.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

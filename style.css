@@ -1,0 +1,265 @@
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff5e0 0%, #ffd89b 100%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* REMOVER SUBLINHADOS DOS LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* TÍTULOS */
+h1 {
+  color: #d95d00;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* LOGO */
+header img {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 500px;
+  height: auto;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAVIGATION CARDS - INDEX */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff7ec;
+  border: 2px solid #FF9F1C;
+  border-radius: 16px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 159, 28, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(255, 159, 28, 0.4);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #FF9F1C;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* CHATBOT */
+.chat-interface {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chat {
+  background: #FFF8E6;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(255, 159, 28, 0.2);
+  margin-bottom: 20px;
+}
+
+.bot, .user {
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.bot {
+  background: #FFEBD6;
+  align-self: flex-start;
+}
+
+.user {
+  background: #FF9F1C;
+  color: white;
+  align-self: flex-end;
+}
+
+/* IMAGEM ROBÔ AO LADO */
+.robot-image img {
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  align-items: center;
+}
+
+/* INPUT AREA CHAT */
+.input-area {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#userInput {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #FF9F1C;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.input-area button {
+  background: #FF9F1C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-area button:hover {
+  background: #e08600;
+}
+
+/* GERADOR DE PEDIDO */
+.gerador-pedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff7ec;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 159, 28, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+#gerarBtn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background: #FF9F1C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background 0.3s;
+}
+
+#gerarBtn:hover {
+  background: #e08600;
+}
+
+#pedido {
+  font-size: 1.2rem;
+  background: #FFF0DA;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 159, 28, 0.2);
+  min-height: 120px;
+  user-select: none;
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+  margin-top: 30px;
+  background: #fff;
+  color: #FF9F1C;
+  border: 2px solid #FF9F1C;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s;
+  font-weight: bold;
+}
+
+.btn-voltar:hover {
+  background-color: #e08600;
+  color: white;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+
+  .input-area button {
+    width: 100%;
+  }
+
+  .chat-interface {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#voiceBtn {
+  margin-left: 8px;
+  padding: 8px 12px;
+  font-size: 1.2em;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#voiceBtn:hover {
+  background-color: #e64a19;
+}

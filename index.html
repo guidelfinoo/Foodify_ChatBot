@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>🍔 Foodify - Início</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="logo_foodify.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>🍔 Bem-vindo à Hamburgueria Virtual Foodify</h1>
+        <img src="logo_foodify.png" alt="Logo Foodify" />
+    </header>
+
+    <main class="container">
+        <div class="card-container">
+
+            <a href="chatbot.html" class="card" aria-label="Conversar com o Atendente">
+                <img src="chat_foodify.png" alt="Ícone de conversa" />
+                <h2>💬 Conversar com o Atendente</h2>
+                <p>Fale diretamente com nosso atendente virtual para tirar dúvidas e fazer pedidos 🍽️.</p>
+            </a>
+
+            <a href="gerar_pedido.html" class="card" aria-label="Gerar Pedido Automático">
+                <img src="pedido_foodify.png" alt="Ícone de pedido" />
+                <h2>⚡ Gerar Pedido Automático</h2>
+                <p>Crie seu pedido rapidamente com nosso sistema automático de geração de pedidos 🛒.</p>
+            </a>
+
+        </div>
+    </main>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
